@@ -3,6 +3,9 @@
 
 Long connection framework
 
-![data flow](doc/images/magline_dataflow.png)
+## Workflow
+![workflow](doc/image/mmagline_workflow.png)
 
+When a client connect to magline. It must send L1 then L2 CMD on order before comunication 
+with other business logic moudlues. And if L1 or L2 return an error, magline will return an error message to client and broker the connection.
 
